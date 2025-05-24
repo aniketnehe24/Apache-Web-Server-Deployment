@@ -1,0 +1,33 @@
+##Test Apache Configuration:
+sudo systemctl restart httpd
+##Restart Apache:
+sudo systemctl restart httpd
+##Configure Firewall:
+sudo firewall-cmd --permanent --add-service=http and sudo firewall-cmd --permanent --add-service=https; then sudo firewall-cmd --reload
+
+● firewalld.service - firewalld - dynamic firewall daemon
+     Loaded: loaded (/usr/lib/systemd/system/firewalld.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2025-05-24 01:55:59 UTC; 1h 24min ago
+       Docs: man:firewalld(1)
+   Main PID: 1394 (firewalld)
+      Tasks: 2 (limit: 1057)
+     Memory: 35.3M
+        CPU: 578ms
+     CGroup: /system.slice/firewalld.service
+             └─1394 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
+
+May 24 01:55:58 ankdm.kt.com systemd[1]: Starting firewalld.service - firewalld - dynamic firewall daemon...
+May 24 01:55:59 ankdm.kt.com systemd[1]: Started firewalld.service - firewalld - dynamic firewall daemon.
+● firewalld.service - firewalld - dynamic firewall daemon
+     Loaded: loaded (/usr/lib/systemd/system/firewalld.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2025-05-24 01:55:59 UTC; 1h 25min ago
+       Docs: man:firewalld(1)
+   Main PID: 1394 (firewalld)
+      Tasks: 2 (limit: 1057)
+     Memory: 35.3M
+        CPU: 578ms
+     CGroup: /system.slice/firewalld.service
+             └─1394 /usr/bin/python3 -s /usr/sbin/firewalld --nofork --nopid
+
+May 24 01:55:58 ankdm.kt.com systemd[1]: Starting firewalld.service - firewalld - dynamic firewall daemon...
+May 24 01:55:59 ankdm.kt.com systemd[1]: Started firewalld.service - firewalld - dynamic firewall daemon.

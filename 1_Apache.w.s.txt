@@ -1,0 +1,6 @@
+##Install Apache Server:
+sudo dnf install httpd
+httpd-tools-2.4.62-1.amzn2023.x86_64
+httpd-filesystem-2.4.62-1.amzn2023.noarch
+httpd-core-2.4.62-1.amzn2023.x86_64
+httpd-2.4.62-1.amzn2023.x86_64

@@ -1,0 +1,13 @@
+###Create a Virtual Host Configuration File:
+##vi /etc/httpd/conf.d/ip.conf
+
+<VirtualHost 172.31.41.1:80>
+    ServerAdmin root@ankdm.kt.com
+    DocumentRoot "/var/www/html"
+
+    ServerName ankdm.kt.com
+    ErrorLog logs/mywebsite-error_log
+    CustomLog logs/mywebsite-access_log common
+</VirtualHost>
+
+

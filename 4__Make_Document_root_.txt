@@ -1,0 +1,183 @@
+##Create a Document Root Directory:
+#sudo mkdir -p /var/www/html
+##Create Sample Website Files (e.g., index.html):
+#sudo vi  /var/www/html/index.html  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Nehe - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+        .login-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background: transparent;
+            color: #fff;
+            font-size: 1.1em;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .input-field:focus {
+            border-color: #feb47b;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #feb47b;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #ff7e5f;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome, Aniket Nehe</h1>
+        <form action="/submit-login" method="post">
+            <input type="text" name="username" class="input-field" placeholder="Username" required><br>
+            <input type="password" name="password" class="input-field" placeholder="Password" required><br>
+            <input type="submit" value="Login" class="submit-btn">
+        </form>
+        <div class="footer">
+            <p>Secure Login Portal</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Nehe - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+        .login-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background: transparent;
+            color: #fff;
+            font-size: 1.1em;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .input-field:focus {
+            border-color: #feb47b;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #feb47b;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #ff7e5f;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome, Aniket Nehe</h1>
+        <form action="/submit-login" method="post">
+            <input type="text" name="username" class="input-field" placeholder="Username" required><br>
+            <input type="password" name="password" class="input-field" placeholder="Password" required><br>
+            <input type="submit" value="Login" class="submit-btn">
+        </form>
+        <div class="footer">
+            <p>Secure Login Portal</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
